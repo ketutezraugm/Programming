@@ -11,25 +11,32 @@ struct data {
 
 int main() {
     struct data mahasiswa[10];
-    int i,j;
-    int input, choice;
+    int i=0,j;
+    int m=0,f=0;
+    string input, choice;
     
-    cout << "do you want to enter a new student? (yes=1, no=0) ";
+    cout << "do you want to enter a new student? (y/n) ";
     cin >> input;
-    if (input == 1) {
+    
+    if (input == "y") {
         while (true) {
-            i=0;
+            // input
             cout << "Enter name: ";
             cin >> mahasiswa[i].name;
             cout << "Enter nim: ";
             cin >> mahasiswa[i].nim;
-            cout << "Enter gender: ";
+            cout << "Enter gender: (m/f) ";
             cin >> mahasiswa[i].gender;
+            if (mahasiswa[i].gender == 'm')
+                m++;
+            else if (mahasiswa[i].gender == 'f')
+                f++;
             i++;
             
-            cout << "do you want to continue? (yes=1, no=0) ";
+            // restart
+            cout << "do you want to continue? (y/n) ";
             cin >> choice;
-            if (choice == 1)
+            if (choice == "y")
                 continue;
             else {
                 j=i;
@@ -37,8 +44,13 @@ int main() {
             }
         }
     }
+    cout << endl;
     
+    // output
     for (i=0; i<j; i++)
         cout << mahasiswa[i].name << " with nim " << mahasiswa[i].nim << " wih gender " << mahasiswa[i].gender << endl;
+        
+    cout << "\nNumber of male students: " << m << endl;
+    cout << "Number of female students: " << f << endl;
     
 }
