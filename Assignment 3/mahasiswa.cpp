@@ -28,6 +28,8 @@ int main() {
             cin >> mahasiswa[i].nim;
             cout << "Enter gender: (m/f) ";
             cin >> mahasiswa[i].gender;
+
+            // genders counter
             if (mahasiswa[i].gender == 'm')
                 m++;
             else if (mahasiswa[i].gender == 'f')
