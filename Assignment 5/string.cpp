@@ -13,6 +13,9 @@ int main() {
 
     for (int i=0; i<5; i++) {
         
+        // full id
+        cout << students[i] << endl;
+        
         // academic year
         cout << "Academic Year: " << students[i].substr(0,2) << endl;
         
