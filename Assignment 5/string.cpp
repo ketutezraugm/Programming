@@ -19,7 +19,7 @@ int main() {
         // academic year
         cout << "Academic Year : " << students[i].substr(0,2) << endl;
         
-        // divide under grad & post grad
+        // seperate under grad & post grad
         // since grad & post grad have different position
         if (students[i].size() == 18) {
             
