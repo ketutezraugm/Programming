@@ -15,25 +15,25 @@ class Shape {
     float square() {
         return (lenght*lenght); 
     }
+    float triangle() { 
+        return (lenght*lenght*0.5); 
+    }
+    float trapezoid() { 
+        return (0.5*(lenght+breadth)*height); 
+    }
+    float square() { 
+        return (lenght*lenght); 
+    }
+    float square() {
+        return (lenght*lenght); 
+    }
     float square() { 
         return (lenght*lenght); 
     }
     float square() { 
         return (lenght*lenght); 
     }
-    float square() { // cube
-        return (lenght*lenght); 
-    }
-    float square() { // cube
-        return (lenght*lenght); 
-    }
-    float square() { // cube
-        return (lenght*lenght); 
-    }
-    float square() { // cube
-        return (lenght*lenght); 
-    }
-    float square() { // cube
+    float square() {
         return (lenght*lenght); 
     }
 };
